@@ -1,10 +1,10 @@
 <div class="card" style="width: 18rem;">
+    <h5>Volo:{{ $flight['id'] }}-Destinazione:{{ $flight['destination'] }}</h5>
+    <p>Partenza ore: {{ $flight['time']['departure'] }}</p>
+    @if ($cardVisible)
+        <p>Arrivo ore: {{ $flight['time']['arrival'] }}</p>
+        <img class="img-fluid" src="{{ $flight['cover'] }}" alt="immagine destinazione">
+    @endif
+    <a href="/detail/{{ $flight['id'] }}">Dettagli</a>
 
-    <div class="card-body">
-        <h5 class="card-title">Volo: {{ $flight['id'] }}-</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">Destinazione: {{ $flight['destination'] }}
-        </h6>
-        <p class="card-text">Partenza ore: {{ $flight['time']['departure'] }}</p>
-        <a href="/detail/{{ $flight['id'] }}">Dettagli</a>
-    </div>
 </div>

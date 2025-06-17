@@ -8,7 +8,7 @@
     <section>
 
 
-        <x-card :flight="$flight"></x-card>
+        <x-card :flight="$flight" :cardVisible="true"></x-card>
 
 
     </section>

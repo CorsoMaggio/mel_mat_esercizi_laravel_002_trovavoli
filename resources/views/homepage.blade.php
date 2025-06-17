@@ -16,7 +16,7 @@
 
         <div class="card-group">
             @foreach ($flights as $flight)
-                <x-card :flight="$flight"></x-card>
+                <x-card :flight="$flight" :cardVisible="false"></x-card>
             @endforeach
 
         </div>
