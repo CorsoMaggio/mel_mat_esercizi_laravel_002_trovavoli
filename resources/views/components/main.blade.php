@@ -25,7 +25,7 @@
                     <div class="navbar-nav">
                         <a class="nav-link" aria-current="page" href="/">Home</a>
 
-                        <a class="nav-link" aria-current="page">Dettaglio voli</a>
+                        <a class="nav-link" aria-current="page" href="/contact">Contatti</a>
                     </div>
                 </div>
             </div>
