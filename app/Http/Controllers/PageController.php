@@ -68,6 +68,15 @@ class PageController extends Controller
 
     public function sendData(Request $request)
     {
+        $request->validate(
+            [
+                'first-name' => ['required', 'max:20'],
+                'last-name' => 'required',
+                'email' => ['required', 'email'],
+                'text' => ['required', 'min:10']
+
+            ]
+        );
         dd($request->all());
     }
 }
